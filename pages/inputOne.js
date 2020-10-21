@@ -29,15 +29,11 @@ export default class InputOne extends Component {
         const textInput = this.props.inputRef
         return (
             
-
-            
             <Space direction="vertical">
                 <Title level={4}>Current Text:</Title>
                 <p className="value">{value}</p>
                 <Input placeholder="Your text" onChange={this.onChange} size="large" value={inputValue} ref={textInput}/>
                 <Button type="primary" onClick={this.onHit}> HIT </Button>
-
-            
             </Space>
             
         )
