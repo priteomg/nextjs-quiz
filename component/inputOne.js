@@ -27,6 +27,7 @@ export default class InputOne extends Component {
         const value = this.props.value
         const inputValue = this.state.value
         const textInput = this.props.inputRef
+        console.log('rendered')
         return (
             
             <Space direction="vertical">

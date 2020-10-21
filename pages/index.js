@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React, { Component } from 'react'
 import {Button, Col, Row, Space} from 'antd'
-import InputOne from './inputOne'
-import InputTwo from './inputTwo'
+import InputOne from '../component/inputOne'
+import InputTwo from '../component/inputTwo'
+import InputComponent from '../component/inputComponent'
 
 
 export default class Home extends Component {
@@ -47,10 +48,12 @@ export default class Home extends Component {
       <Row>
         <div className="flex-box">
           <div className="box">
-            <Col span={12}><InputOne value={value} handleChange={this.handleChange} onHit={this.onHit1} inputRef={this.textInput1}/></Col>
+            {/* <Col span={12}><InputOne value={value} handleChange={this.handleChange} onHit={this.onHit1} inputRef={this.textInput1}/></Col> */}
+            <Col span={12}><InputComponent value={value} handleChange={this.handleChange} onHit={this.onHit1} inputRef={this.textInput1}/></Col>
           </div>
           <div className="box">
-            <Col span={12}><InputTwo value={value} handleChange={this.handleChange} onHit={this.onHit2} inputRef={this.textInput2}/></Col>
+          <Col span={12}><InputComponent value={value} handleChange={this.handleChange} onHit={this.onHit2} inputRef={this.textInput2}/></Col>
+            {/* <Col span={12}><InputTwo value={value} handleChange={this.handleChange} onHit={this.onHit2} inputRef={this.textInput2}/></Col> */}
           </div>
         </div>
       </Row>
